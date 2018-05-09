@@ -16,14 +16,14 @@
     set-cookie:key=val;domain=.example.com;path=/
 * file://:Cxxx是文件协议，平时访问的是http协议，img src可以跨域访问图片
 * 测试一下手机网上webapp页面 根据这个网速可以给用户处一些网速比较慢的解决方案
-```var s = new images();
+`var s = new images();
 var start = Date.now();
 s.src = "http://www.baidu.com/a.gif";
 s.onload = function(){
 	var end = Date.now();
 	t = end - start;
 	v = '1.1'/t = 'kb/s' 
-}```
+}`
 * 怎么突破同源策略
     * html标签  img、iframe、srcipt（jsonp）、link（background）
 
